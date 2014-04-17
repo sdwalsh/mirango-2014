@@ -87,6 +87,15 @@ h6, .h6 {
   color: #999;
 }
 
+@media (min-width: 768px){
+.navbar-nav{
+    margin: 0 auto;
+    display: table;
+    table-layout: fixed;
+    float:none;
+}
+}  
+
 
 /*
  * Main column and sidebar layout
@@ -99,6 +108,7 @@ h6, .h6 {
 
 /* Sidebar modules for boxing content */
 .sidebar-module {
+  text-align: center;
   padding: 15px;
   margin: 0 -15px 15px;
 }
