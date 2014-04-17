@@ -7,83 +7,65 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+    <title>Mirango.io</title>
 
-    <title>Mirango Blog</title>
+    <!-- Bootstrap -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:100italic,100,300italic,300,400italic,400,700italic,700,900italic,900" rel="stylesheet" type="text/css">
 
     <!-- Bootstrap core CSS -->
     <link href="../../../../../css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
     <link href="../../../../../css/blog.css" rel="stylesheet">
+    <link href="../../../../../css/syntax.css" rel="stylesheet">
 
-    <!-- Just for debugging purposes. Don't actually copy this line! -->
-    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-
-    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-
   <body>
 
     <div class="container">
-
       <div class="blog-header">
-        <h1 class="blog-title">Mirango</h1>
-        <p class="lead blog-description">Mirango Stuff</p>
+        <h1 class="blog-title">Mirango.io <small>Ramblings in computer science</small></h1>
       </div>
 
       <div class="row">
-
-        <div class="col-sm-8 blog-main">
-
+        <div class="col-sm-10 blog-main">
           <div class="blog-post">
             <h2 class="blog-post-title">{{ page.title }}</h2>
-            <p class="blog-post-meta">{{ page.date | date_to_string }}<a href="#"> by Sean</a></p>
-            {{ content }}
-          </div><!-- /.blog-post -->
-
-        </div><!-- /.blog-main -->
-
-        <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
-          <div class="sidebar-module sidebar-module-inset">
-            <h4>About</h4>
-            <p>Testing Ordered Lists with bootstrap.</p>
+            <p class = "blog-post-meta">{{ page.date | date_to_string }} by Sean</p>
+            <div class = "blog-content">{{ content }} </div>
           </div>
+        </div>
+        <div class="col-sm-2 blog-sidebar">
           <div class="sidebar-module">
             <h4>Archives</h4>
             <ol class="nav nav-pills">
               {% for post in site.posts %}
-                <li><span><a href="{{ post.url }}">{{ post.title }}</a></li>
+                <li><span><a href="{{ post.url }}">{{ post.title }}</a></span></li>
               {% endfor %}
             </ol>
           </div>
-          <div class="sidebar-module">
-            <h4>Elsewhere</h4>
-            <ol class="list-unstyled">
-              <li><a href="https://www.github.com/sdwalsh">GitHub</a></li>
-              <li><a href="#">Twitter</a></li>
-              <li><a href="#">Facebook</a></li>
-            </ol>
-          </div>
-        </div><!-- /.blog-sidebar -->
+        </div>
+      </div>
 
-      </div><!-- /.row -->
-
-    </div><!-- /.container -->
-
-    <div class="blog-footer">
-      <p>
-        <a href="#">Back to top</a>
-      </p>
+      <div class="blog-footer">
+        <p>
+        </p>
+      </div>
     </div>
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="../../../../../js/bootstrap.min.js"></script>
   </body>
 </html>

@@ -1,5 +1,6 @@
 name: Mirango.io
 markdown: redcarpet
-pygments: true
-exclude: [CSS, JS]
+highlighter: pygments
+exclude: [CSS, JS, fonts]
 timezone: America/New_York
+permalink: /:title
