@@ -136,6 +136,7 @@ h6, .h6 {
   margin-bottom: 60px;
 }
 .blog-post-title {
+  padding-top: 15px;
   margin-bottom: 5px;
   font-size: 40px;
 }
