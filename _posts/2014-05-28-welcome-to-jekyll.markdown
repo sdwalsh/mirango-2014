@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2014-02-28 06:55:03
+title:  "Welcome to Jekyll! 3"
+date:   2014-06-28 06:55:03
 categories: jekyll update
 description: "this a text of a description to be used on the main page, hopefully this will work"
 ---
