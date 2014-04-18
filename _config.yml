@@ -3,4 +3,4 @@ markdown: redcarpet
 highlighter: pygments
 exclude: [CSS, JS, fonts]
 timezone: America/New_York
-permalink: /:title
+permalink: pretty
