@@ -4,16 +4,16 @@ title: Mirango.io Blog
 ---
 <div id="blog-title">
 	<div class="row">
+		{% for post in site.posts %}
 	    <div class="col-sm-8">
-	    	{% for post in site.posts %}
 		    <h3><a class="url-title" href="{{ post.url }}">{{ post.title }}</a><br><small>{{ post.description }}</small></h3>
 			{% endfor %}
 		</div>
 		<div class="col-sm-2 col-sm-offset-1 hidden-xs hidden-sm">
 			{% for post in site.posts %}
 			<h4>{{ post.md }}</h4>
-			{% endfor %}
 		</div>
+		{% endfor %}
     </div>
 
 </div>
