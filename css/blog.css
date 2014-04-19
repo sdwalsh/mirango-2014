@@ -58,6 +58,8 @@ h6, .h6 {
 
  .url-title {
   text-decoration: none;
+  margin-bottom: none;
+  padding-bottom: none;
  }
 
 .blog-header {
