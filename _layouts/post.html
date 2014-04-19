@@ -7,16 +7,14 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
-    <title>Mirango.io</title>
+    <title>Mirango.io | Sean Walsh</title>
 
-    <!-- Bootstrap -->
+    <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato:100italic,100,300italic,300,400italic,400,700italic,700,900italic,900" rel="stylesheet" type="text/css">
-
     <!-- Bootstrap core CSS -->
     <link href="../css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Custom styles for this template -->
-    <link href="../css/blog.css" rel="stylesheet">
+    <!-- Custom styles -->
+    <link href="../css/default.css" rel="stylesheet">
     <link href="../css/syntax.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -26,57 +24,38 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
-  <body>
+<body>
     <div class="container">
-      <div class="row visible-xs">
-        <div class="col-sm-3 blog-sidebar">
+      <div class="row">
+        <div class="col-sm-4 col-md-3 blog-sidebar">
           <div class="sidebar-module">
             <img class="bunny" src="../images/seans_bunny.png">
             <h3>Mirango.io</h3>
-            <p>The blog of Sean at mirango.io</p>
+            <p>Sean's ramblings in computer science, programming, and electronics</p>
             <nav class="navbar navbar-default" role="navigation">
-        <div class="container-fluid">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="https://www.mirango.io">Mirango</a>
-          </div>
-
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-            <ul class="nav navbar-nav">
-              <li><a href="https://www.mirango.io">Home</a></li>
-              <li><a href="https://www.mirango.io/about">About</a></li>
-              <li><a href="https://www.github.com/sdwalsh">Github</a></li>
-            </ul>
-            
-            
-            <form class="navbar-form navbar-right" role="search">
-              <div class="form-group">
-                <input type="text" class="form-control" placeholder="Search">
+            <div class="container-fluid">
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#collapse-nav">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="https://www.mirango.io">Nav</a>
               </div>
-              <button type="submit" class="btn btn-default">Submit</button>
-            </form>
-          </div><!-- /.navbar-collapse -->
-        </div><!-- /.container-fluid -->
-      </nav>
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="collapse-nav">
+                <ul class="nav navbar-nav">
+                  <li><a href="https://www.mirango.io">Home</a></li>
+                  <li><a href="https://www.mirango.io/about">About</a></li>
+                  <li><a href="https://www.github.com/sdwalsh">Github</a></li>
+                </ul>
+              </div><!-- /.navbar-collapse -->
+            </div><!-- /.container-fluid -->
+          </nav>
           </div>
         </div>
-        <div class="col-sm-9 blog-main">
-          <div class="blog-post">
-            <h2 class="blog-post-title">{{ page.title }}</h2>
-            <p class = "blog-post-meta">{{ page.date | date: "%-d %B %Y" }} :: by Sean</p>
-            <div class = "blog-content">{{ content }} </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="row hidden-xs">
         <div class="col-sm-8 col-md-9 blog-main">
           <div class="blog-post">
             <h2 class="blog-post-title">{{ page.title }}</h2>
@@ -84,29 +63,17 @@
             <div class = "blog-content">{{ content }} </div>
           </div>
         </div>
-        <div class="col-sm-4 col-md-3 blog-sidebar">
-          <div class="sidebar-module">
-            <img class="bunny" src="../images/seans_bunny.png">
-            <h3>Mirango.io</h3>
-            <p>The blog of Sean at mirango.io</p>
-            <ul class="nav navbar-nav">
-              <li><a href="https://www.mirango.io">Home</a></li>
-              <li><a href="https://www.mirango.io/about">About</a></li>
-              <li><a href="https://www.github.com/sdwalsh">Github</a></li>
-            </ul>
-          </div>
-        </div>
       </div>
 
-
       <div class="breadcrumb">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Library</a></li>
-        <li class="active">Data</li>
+        <li><a href="https://www.mirango.io">Home</a></li>
+        <li>{{ page.title }}</li>
       </div>
 
       <div class="blog-footer">
-        <p>
+        <p>Mirango.io :: blog posts are licensed under a Creative Commons Attribution 4.0 International License and all original code is under the MIT License
+        </p>
+        <p>Site built with Jekyll using Twitter Bootstrap - source code available on <a href="https://www.github.com/sdwalsh/mirango">github</a>.
         </p>
       </div>
     </div>
@@ -114,10 +81,9 @@
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
-
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="../../../../../js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
   </body>
 </html>
