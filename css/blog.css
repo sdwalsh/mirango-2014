@@ -116,11 +116,17 @@ h6, .h6 {
  * Blog posts
  */
 
-.main-page{
+ .description {
+  padding: none;
+  margin: none;
+ }
+
+.main-page {
   padding-top: 40px;
 }
 
 .blog-post {
+  padding-top: 20px;
   margin-bottom: 60px;
 }
 .blog-post-title {

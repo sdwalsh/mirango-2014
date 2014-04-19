@@ -5,8 +5,14 @@ title: Mirango.io Blog
 <div id="home">
 	<h2 id="blog-title">Blog Posts</h2>
     {% for post in site.posts %}
-    <h3><a class="url-title" href="{{ post.url }}">{{ post.title }}  [2014]</a></h3>
-	<span class="description"><small>{{ post.description }}</small></span>
+    <row>
+    <div class="col-sm-9">
+	    <h3><a class="url-title" href="{{ post.url }}">{{ post.title }}</a></h3>
+		<span class="description"><small>{{ post.description }}</small></span>
+	</div>
+	<div class="col-sm-1 col-sm-offset-2">
+		<h4>{{ page.date | date: "%B %-d }}</h4>
+	</div>
     {% endfor %}
 
 </div>
