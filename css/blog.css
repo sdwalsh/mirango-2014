@@ -125,6 +125,10 @@ h6, .h6 {
  * Blog posts
  */
 
+.main-page{
+  padding: 20px;
+}
+
 .blog-post {
   margin-bottom: 60px;
 }
