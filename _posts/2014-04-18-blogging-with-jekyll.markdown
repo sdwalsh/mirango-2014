@@ -11,10 +11,10 @@ I've decided it's time I should start another blog.  I've had several blogs in t
 
 Since my blog will be serving identical pages to everybody, there's really no need for a complicated (and often buggy) backend.  Rather than storing posts and pages on a database, a static site generator generates static HTML from a mix of templates, markdown, and css.  For mirango.io I decided to use Jekyll, one of the most popular static site generators.
 
-Take the time and look at the source for Mirango.io.  It's available on [GitHub][mirango] along with the Nginx [configuration file][nginx].
+Take the time and look at the source for Mirango.io.  It's available on [GitHub][mirango] along with the Nginx [configuration file][nginx].  If you're interested in trying out jekyll yourself, check out the quick install guide below.
 
 
-<h4>Short Guide to Installing Jekyll on Your Local Computer</h4>
+<h3>Short Guide to Installing Jekyll on Your Local Computer</h3>
 
 {% highlight bash %}
 # Install rvm and ruby (stable)
