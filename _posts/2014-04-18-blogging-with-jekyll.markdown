@@ -16,7 +16,7 @@ Take the time and look at the source for Mirango.io.  It's available on [GitHub]
 
 <h3>Short guide to installing Jekyll on your local computer</h3>
 
-{% highlight bash %}
+{% highlight shell %}
 # Install rvm and ruby (stable)
 $ \curl -sSL https://get.rvm.io | bash -s stable --ruby
 
