@@ -14,7 +14,7 @@ Since my blog will be serving identical pages to everybody, there's really no ne
 Take the time and look at the source for Mirango.io.  It's available on [GitHub][mirango] along with the Nginx [configuration file][nginx].  If you're interested in trying out jekyll yourself, check out the quick install guide below.
 
 
-<h3>Short Guide to Installing Jekyll on Your Local Computer</h3>
+<h3>Short guide to installing Jekyll on your local computer</h3>
 
 {% highlight bash %}
 # Install rvm and ruby (stable)
