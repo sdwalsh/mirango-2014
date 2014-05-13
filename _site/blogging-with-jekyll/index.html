@@ -12,10 +12,10 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato:100italic,100,300italic,300,400italic,400,700italic,700,900italic,900" rel="stylesheet" type="text/css">
     <!-- Bootstrap core CSS -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
     <!-- Custom styles -->
-    <link href="css/blog.css" rel="stylesheet">
-    <link href="css/syntax.css" rel="stylesheet">
+    <link href="../css/blog.css" rel="stylesheet">
+    <link href="../css/syntax.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -29,7 +29,7 @@
       <div class="row main-page">
         <div class="col-sm-4 col-md-3 blog-sidebar">
           <div class="sidebar-module">
-            <img class="bunny" alt="mirango.io blog" src="../images/seans_bunny.png">
+            <img class="bunny" alt="mirango.io logo" src="../images/seans_bunny.png">
             <h3>Mirango.io</h3>
             <p>Sean's discussions in computer science, programming, and electronics</p>
 
@@ -65,22 +65,42 @@
         </div>
         <div class="col-sm-8 col-md-9 blog-main">
           <div class="blog-post">
-            <div class = "blog-content"><div id="blog-title">
-	<div class="row">
-		
-	    <div class="col-sm-8">
-		    <h3><a class="url-title" href="/blogging-with-jekyll">Blogging with Jekyll</a><br><small>Hello Jekyll, the beginning of mirango.io</small></h3>
-		</div>
-		<div class="col-sm-2 col-sm-offset-1 hidden-xs hidden-sm">
-			<h4>April 18</h4>
-		</div>
-		
-    </div>
+            <h2>Blogging with Jekyll</h2>
+            <p class = "blog-post-meta">18 April 2014 :: by Sean</p>
+            <div class = "blog-content"><p>I&#39;ve decided it&#39;s time I should start another blog.  I&#39;ve had several blogs in the past, mostly self hosted wordpress blogs.  Last year I discovered something that caught my eye.  Static site generators.  </p>
 
-</div> </div>
+<p>Since my blog will be serving identical pages to everybody, there&#39;s really no need for a complicated (and often buggy) backend.  Rather than storing posts and pages on a database, a static site generator generates static HTML from a mix of templates, markdown, and css.  For mirango.io I decided to use Jekyll, one of the most popular static site generators.</p>
+
+<p>Take the time and look at the source for Mirango.io.  It&#39;s available on <a href="https://www.github.com/sdwalsh/mirango">GitHub</a> along with the Nginx <a href="https://www.github.com/sdwalsh/mirango_nginx">configuration file</a>.  If you&#39;re interested in trying out jekyll yourself, check out the quick install guide below.</p>
+
+<h3>Short guide to installing Jekyll on your local computer</h3>
+<div class="highlight"><pre><code class="bash language-bash" data-lang="bash"><span class="c"># Install rvm and ruby (stable)</span>
+<span class="nv">$ </span><span class="se">\c</span>url -sSL https://get.rvm.io <span class="p">|</span> bash -s stable --ruby
+
+<span class="c"># Install the jekyll gem</span>
+<span class="nv">$ </span>gem install jekyll
+
+<span class="c"># Create a new jekyll site (jekyll will create the basic file structure and configuration files)</span>
+<span class="nv">$ </span>jekyll new siteName
+
+<span class="c"># Move into the newly created file</span>
+<span class="nv">$ </span><span class="nb">cd </span>siteName
+
+<span class="c"># Builds the site (takes all the files and outputs the static site in the _site folder)</span>
+<span class="nv">$ </span>jekyll build
+<span class="c"># Creates a development server at localhost:4000</span>
+<span class="nv">$ </span>jekyll serve
+</code></pre></div>
+<p>If you&#39;re interested in hosting a jekyll site, GitHub will host the site for free.  Check out <a href="https://pages.github.com">https://pages.github.com</a>.</p>
+ </div>
           </div>
         </div>
       </div>
+
+      <ol class="breadcrumb">
+        <li><a href="https://www.mirango.io">Home</a></li>
+        <li>Blogging with Jekyll</li>
+      </ol>
 
       <div class="blog-footer">
         <p>Mirango.io :: blog posts are licensed under a Creative Commons Attribution 4.0 International License and all original code is under the MIT License
@@ -97,6 +117,6 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="js/bootstrap.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
   </body>
 </html>

@@ -19,21 +19,6 @@ h6, .h6 {
   color: #333;
 }
 
-
-/*
- * Override Bootstrap's default container.
- */
-
-
-/*
- * Masthead for nav
- */
-
-.blog-masthead {
-  background-color: #428bca;
-  box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
-}
-
 /* Nav links */
 .blog-nav-item {
   position: relative;
@@ -70,6 +55,10 @@ h6, .h6 {
 /*
  * Blog name and description
  */
+
+ .url-title {
+  text-decoration: none;
+ }
 
 .blog-header {
   padding-top: 20px;
@@ -123,26 +112,16 @@ h6, .h6 {
   margin-bottom: 0;
 }
 
-
-
-/* Pagination */
-.pager {
-  margin-bottom: 60px;
-  text-align: left;
-}
-.pager > li > a {
-  width: 140px;
-  padding: 10px 20px;
-  text-align: center;
-  border-radius: 30px;
-}
-
-
 /*
  * Blog posts
  */
 
+.main-page {
+  padding-top: 40px;
+}
+
 .blog-post {
+  padding-top: 20px;
   margin-bottom: 60px;
 }
 .blog-post-title {
@@ -155,15 +134,11 @@ h6, .h6 {
   color: #999;
 }
 
-
 /*
  * Footer
  */
 
 .blog-footer {
-  padding: 40px 0;
-  color: #999;
-  text-align: center;
-  background-color: #f9f9f9;
   border-top: 1px solid #e5e5e5;
+  text-align: center;
 }
