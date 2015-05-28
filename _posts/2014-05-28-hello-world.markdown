@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Blogging with Jekyll"
+title:  "Hello, world!"
 date:   2015-05-28 08:29:03
 categories: blogging
 description: "Hello, world!  The beginning of Mirango.io"
