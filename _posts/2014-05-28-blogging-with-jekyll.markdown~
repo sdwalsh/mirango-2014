@@ -18,7 +18,7 @@ Take the time and look at the source for Mirango.io.  It's available on [GitHub]
 
 ```bash
 # Install rvm and ruby (stable)
-$ \curl -sSL https://get.rvm.io | bash -s stable --ruby
+$ curl -sSL https://get.rvm.io | bash -s stable --ruby
 
 # Install the jekyll gem
 $ gem install jekyll
@@ -31,11 +31,12 @@ $ cd siteName
 
 # Builds the site (takes all the files and outputs the static site in the _site folder)
 $ jekyll build
-# Creates a development server at localhost:4000
+
+# Creates a development web server at localhost:4000
 $ jekyll serve
 ```
 
-If you're interested in hosting a jekyll site, GitHub will host the site for free.  Check out [https://pages.github.com][pages].
+If you're interested in creating a jekyll site, GitHub will host the site for free.  Check out [https://pages.github.com][pages].
 
 [mirango]: https://www.github.com/sdwalsh/mirango
 [nginx]: https://www.github.com/sdwalsh/mirango_nginx
