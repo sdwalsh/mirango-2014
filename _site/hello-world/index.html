@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-  <head>
+    <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -24,9 +24,10 @@
       <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
   </head>
+
   <body>
     <div class="container">
-      <div class="row main-page">
+            <div class="row main-page">
         <div class="col-sm-4 col-md-3 blog-sidebar">
           <div class="sidebar-module">
             <img class="bunny" alt="mirango.io logo" src="../images/seans_bunny.png">
@@ -55,7 +56,7 @@
               <div class="collapse navbar-collapse" id="collapse-nav">
                 <ul class="nav navbar-nav">
                   <li><a href="https://www.mirango.io">Home</a></li>
-                  <li><a href="https://www.mirango.io/about.html">About</a></li>
+                  <li><a href="https://www.mirango.io/about">About</a></li>
                   <li><a href="https://www.github.com/sdwalsh">Github</a></li>
                 </ul>
               </div><!-- /.navbar-collapse -->
@@ -63,19 +64,24 @@
           </nav>
           </div>
         </div>
+
         <div class="col-sm-8 col-md-9 blog-main">
           <div class="blog-post">
-            <h2>Blogging with Jekyll</h2>
-            <p class = "blog-post-meta">18 April 2014 :: by Sean</p>
-            <div class = "blog-content"><p>I&#39;ve decided it&#39;s time I should start another blog.  I&#39;ve had several blogs in the past, mostly self hosted wordpress blogs.  Last year I discovered something that caught my eye.  Static site generators.  </p>
+            <h2>Hello, world!</h2>
+            <p class = "blog-post-meta">28 May 2015 :: by Sean</p>
+            <div class = "blog-content"><p>Hello, world!  I&#39;ve decided it&#39;s time to restart my blog.</p>
 
-<p>Since my blog will be serving identical pages to everybody, there&#39;s really no need for a complicated (and often buggy) backend.  Rather than storing posts and pages on a database, a static site generator generates static HTML from a mix of templates, markdown, and css.  For mirango.io I decided to use Jekyll, one of the most popular static site generators.</p>
+<p>I&#39;m a computer science student and programmer living in Boston with interests in functional programming and concurrent computing.</p>
 
-<p>Take the time and look at the source for Mirango.io.  It&#39;s available on <a href="https://www.github.com/sdwalsh/mirango">GitHub</a> along with the Nginx <a href="https://www.github.com/sdwalsh/mirango_nginx">configuration file</a>.  If you&#39;re interested in trying out jekyll yourself, check out the quick install guide below.</p>
+<p>I&#39;ve had several blogs in the past - mostly self hosted wordpress blogs.  Wordpress offers a lot of functionality that I don&#39;t need for a simple blog, so I was excited to learn about static site generators.</p>
+
+<p>Since my blog will be serving identical pages, there&#39;s really no need for a backend.  Rather than storing posts and pages in a database, a static site generator, as the name suggests, creates static HTML from a mix of templates, markdown, and css.  For mirango.io I decided to use <a href="http://jekyllrb.com">Jekyll</a>.</p>
+
+<p>Feel free to take a look at the source for Mirango.io.  It&#39;s available on <a href="https://www.github.com/sdwalsh/mirango">GitHub</a> along with the Nginx <a href="https://www.github.com/sdwalsh/mirango_nginx">configuration file</a>.  If you&#39;re interested in using Jekyll yourself, I&#39;ve provided a short installation guide below.</p>
 
 <h3>Short guide to installing Jekyll on your local computer</h3>
-<div class="highlight"><pre><code class="bash language-bash" data-lang="bash"><span class="c"># Install rvm and ruby (stable)</span>
-<span class="nv">$ </span><span class="se">\c</span>url -sSL https://get.rvm.io <span class="p">|</span> bash -s stable --ruby
+<div class="highlight"><pre><code class="language-bash" data-lang="bash"><span class="c"># Install rvm and ruby (stable)</span>
+<span class="nv">$ </span>curl -sSL https://get.rvm.io <span class="p">|</span> bash -s stable --ruby
 
 <span class="c"># Install the jekyll gem</span>
 <span class="nv">$ </span>gem install jekyll
@@ -88,18 +94,18 @@
 
 <span class="c"># Builds the site (takes all the files and outputs the static site in the _site folder)</span>
 <span class="nv">$ </span>jekyll build
-<span class="c"># Creates a development server at localhost:4000</span>
+
+<span class="c"># Creates a development web server at localhost:4000</span>
 <span class="nv">$ </span>jekyll serve
 </code></pre></div>
-<p>If you&#39;re interested in hosting a jekyll site, GitHub will host the site for free.  Check out <a href="https://pages.github.com">https://pages.github.com</a>.</p>
+<p>If you&#39;re interested in creating a jekyll site, GitHub will host the site for free.  Check out <a href="https://pages.github.com">https://pages.github.com</a>.</p>
  </div>
           </div>
         </div>
       </div>
-
-      <ol class="breadcrumb">
+	      <ol class="breadcrumb">
         <li><a href="https://www.mirango.io">Home</a></li>
-        <li>Blogging with Jekyll</li>
+        <li>Hello, world!</li>
       </ol>
 
       <div class="blog-footer">
@@ -118,5 +124,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="../js/bootstrap.min.js"></script>
+
   </body>
 </html>
