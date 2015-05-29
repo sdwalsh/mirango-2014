@@ -7,7 +7,9 @@ description: "Hello, world!  The beginning of Mirango.io"
 md: "April 18"
 ---
 
-Hello, world!  I've decided it's time to restart my blog.  I'm a computer science student and programmer living in Boston with interests in functional programming and concurrent computing.
+Hello, world!  I've decided it's time to restart my blog.
+
+I'm a computer science student and programmer living in Boston with interests in functional programming and concurrent computing.
 
 I've had several blogs in the past - mostly self hosted wordpress blogs.  Wordpress offers a lot of functionality that I don't need for a simple blog, so I was excited to learn about static site generators.
 
