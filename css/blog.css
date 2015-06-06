@@ -46,8 +46,8 @@ h6, .h6 {
 }
  .url-title {
   text-decoration: none;
-  text-align: center;
-  font-size: 100px;
+  text-align: left;
+  padding-bottom: 5px;
  }
 
 .blog-header {
@@ -82,6 +82,10 @@ h6, .h6 {
   .post-title {
     text-align: center;
     font-size: 36pt;
+  }
+  .url-title {
+    text-align: left;
+    font-size: 20pt;
   }
   .blog-post-meta {
     text-align: left;
