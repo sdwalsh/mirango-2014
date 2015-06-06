@@ -1,9 +1,5 @@
-/*
- * Globals
- */
-
 body {
-  font-family: 'Lato', serif;
+  font-family: 'Ubuntu', serif;
   color: #555;
 }
 
@@ -14,12 +10,11 @@ h4, .h4,
 h5, .h5,
 h6, .h6 {
   margin-top: 0;
-  font-family: 'Lato', serif;
+  font-family: 'Ubuntu', serif;
   font-weight: normal;
   color: #333;
 }
 
-/* Nav links */
 .blog-nav-item {
   position: relative;
   display: inline-block;
@@ -33,7 +28,6 @@ h6, .h6 {
   text-decoration: none;
 }
 
-/* Active state gets a caret at the bottom */
 .blog-nav .active {
   color: #fff;
 }
@@ -50,11 +44,6 @@ h6, .h6 {
   border-bottom: 5px solid;
   border-left:   5px solid transparent;
 }
-
-
-/*
- * Blog name and description
- */
 
  .url-title {
   text-decoration: none;
@@ -76,29 +65,53 @@ h6, .h6 {
   color: #999;
 }
 
-@media (min-width: 768px){
-.navbar-nav{
-    margin: 0 auto;
-    display: table;
-    table-layout: fixed;
-    float:none;
+.navbar {
+  margin-bottom: 2px;
 }
-}  
 
+.pre {
+  background-color: #002b36;
+}
 
-/*
- * Main column and sidebar layout
- */
+@media (min-width: 768px){
+  .navbar-nav{
+      margin: 0 auto;
+      display: table;
+      table-layout: fixed;
+      float:none;
+  }
+}
+
+@media (min-width: 768px){
+  .main-page{
+    padding-top: 40px;
+  }
+  .blog-post{
+    padding-top: 40px;
+  }
+  .navbar {
+    margin-bottom: 20px;
+  }
+  .blog-main {
+    padding-top: 20px;
+  }
+  .sidebar-module {
+    padding-top: 20px;
+  }
+}
+
+.code, .kbd, .pre, .samp{
+  font-family: 'Ubuntu Mono';
+}
 
 .blog-main {
   font-size: 18px;
   line-height: 1.5;
 }
 
-/* Sidebar modules for boxing content */
 .sidebar-module {
   text-align: center;
-  padding: 15px;
+  padding: 10px;
   margin: 0 -15px 15px;
 }
 .sidebar-module-inset {
@@ -112,16 +125,12 @@ h6, .h6 {
   margin-bottom: 0;
 }
 
-/*
- * Blog posts
- */
-
 .main-page {
-  padding-top: 40px;
+  padding-top: 4px;
 }
 
 .blog-post {
-  padding-top: 20px;
+  padding-top: 2px;
   margin-bottom: 60px;
 }
 .blog-post-title {
@@ -133,10 +142,6 @@ h6, .h6 {
   margin-bottom: 20px;
   color: #999;
 }
-
-/*
- * Footer
- */
 
 .blog-footer {
   border-top: 1px solid #e5e5e5;

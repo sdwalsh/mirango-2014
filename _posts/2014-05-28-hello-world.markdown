@@ -4,7 +4,7 @@ title:  "Hello, world!"
 date:   2015-05-28 08:29:03
 categories: blogging
 description: "Hello, world!  The beginning of Mirango.io"
-md: "April 18"
+md: "May 28"
 ---
 
 Hello, world!  I've decided it's time to restart my blog.
