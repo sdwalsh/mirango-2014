@@ -46,6 +46,7 @@ h6, .h6 {
 }
  .url-title {
   text-decoration: none;
+  text-align: center;
  }
 
 .blog-header {
@@ -72,11 +73,18 @@ h6, .h6 {
   background-color: #002b36;
 }
 
-.url-title {
+.post-title {
   text-align: center;
 }
 
 @media (min-width: 768px){
+  .post-title {
+    text-align: center;
+    font-size: 36pt;
+  }
+  .blog-post-meta {
+    text-align: left;
+  }
   .navbar-nav{
       margin: 0 auto;
       display: table;
@@ -139,6 +147,7 @@ h6, .h6 {
   font-size: 40px;
 }
 .blog-post-meta {
+  text-align: center;
   margin-bottom: 20px;
   color: #999;
 }

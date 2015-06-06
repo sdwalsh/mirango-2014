@@ -7,9 +7,9 @@
       {% include sidebar.html %}
         <div class="col-sm-8 col-md-9 blog-main">
           <div class="blog-post">
-            <h2>{{ page.title }}</h2>
-            <p class = "blog-post-meta">{{ page.date | date: "%-d %B %Y" }} :: by Sean</p>
-            <div class = "blog-content">{{ content }} </div>
+            <h1 class="post-title">{{ page.title }}</h1>
+            <p class="blog-post-meta">{{ page.date | date: "%-d %B %Y" }} :: by Sean</p>
+            <div class="blog-content">{{ content }} </div>
           </div>
         </div>
       </div>
