@@ -97,7 +97,7 @@ h6, .h6 {
       float:none;
   }
   .main-page{
-    padding-top: 40px;
+    padding-top: 20px;
   }
   .blog-post{
     padding-top: 40px;
@@ -106,7 +106,7 @@ h6, .h6 {
     margin-bottom: 20px;
   }
   .blog-main {
-    padding-top: 20px;
+    padding-top: 10px;
   }
   .sidebar-module {
     padding-top: 20px;
@@ -136,10 +136,6 @@ h6, .h6 {
 .sidebar-module-inset ul:last-child,
 .sidebar-module-inset ol:last-child {
   margin-bottom: 0;
-}
-
-.main-page {
-  padding-top: 4px;
 }
 
 .blog-post {
