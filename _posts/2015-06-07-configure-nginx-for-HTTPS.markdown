@@ -7,7 +7,7 @@ description: "Configure Nginx while avoiding common pitfalls and vulnerabilities
 md: "June 7"
 ---
 
-While setting up www.mirango.io, I chose to adopt HTTPS in order to ensure privacy of readers.  Here's a short guide to deploying HTTPS for Nginx with some background.
+While setting up www.mirango.io, I chose to adopt HTTPS in order to ensure privacy of readers.  Here's a short guide I put together while setting up my server.
 
 <h3 class="sub-title">HTTP to HTTPS redirects</h3>
 
