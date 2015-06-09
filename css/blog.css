@@ -82,9 +82,16 @@ h6, .h6 {
   text-align: center;
 }
 
+.sub-title {
+  text-align: center;
+}
+
 @media (min-width: 768px){
   .default-page-title {
     font-size: 20pt;
+  }
+  .sub-title {
+    text-align: left;
   }
   .post-title {
     text-align: center;
