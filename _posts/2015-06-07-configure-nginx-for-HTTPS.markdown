@@ -65,7 +65,7 @@ ssl_protocols           TLSv1 TLSv1.1 TLSv1.2;
 
 HPKP, Public Key Pinning Extension, is a HTTP header that instructs clients to remember the server's cryptographic identity.  When a client visits the server again, it expects a certificate containing the public key stored from the original visit.  HPKP reduces the ability to [issue forged certificates][mitm-attack] for a website.  It should be noted that there is an inherent weakness to key pinning. Since key pinning is a trust on first use security mechanism a client cannot detect a MitM attack (using a forged certificate) when visiting a site for the first time.
 
-HPKP requires the base64-encode of SHA256 hash of the public key, certificate signing request, or the certificate.  Mozilla provides a short guide:
+HPKP requires the base64-encode of SHA256 hash of the public key, certificate signing request, or the certificate.  [Mozilla provides a short guide][base64]:
 
 {% highlight bash %}
 #Given the public key my-key-file.key:
@@ -78,8 +78,6 @@ openssl req -in my-signing-request.csr -pubkey -noout | openssl rsa -pubin -outf
 openssl x509 -in my-certificate.crt -pubkey -noout | openssl rsa -pubin -outform der | openssl dgst -sha256 -binary | openssl enc -base64
 
 {% endhighlight %}
-
-[Two Base64 encode information from public key / certificat / certificate signing request][base64] are required.
 
 {% highlight nginx %}
 add_header Public-Key-Pins 'pin-sha256="BASE64-KEY-INFORMATION"; pin-sha256="BASE64-KEY-INFORMATION"; max-age=5184000; includeSubDomains';
